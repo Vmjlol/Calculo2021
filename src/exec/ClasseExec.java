@@ -73,7 +73,7 @@ public class ClasseExec extends JDialog {
 	issEng = construcao.getIssEng();
 	maoObra = construcao.getMaoObra(Integer.valueOf(forro));
 	visa = construcao.getVisa();
-	double valorTotal = (valorMetro+(maoObra*0.03) + (issEng*0.03)+visa + 43.83);
+	double valorTotal = (valorMetro+(maoObra*0.03) + (issEng*0.03)+visa + 48.61);
 	
 	/*
 	
@@ -87,7 +87,7 @@ public class ClasseExec extends JDialog {
 	System.out.println("Total: "+df.format(valorTotal));
 	*/
 	
-	  JFrame janela = new JFrame("Construção 2021");
+	  JFrame janela = new JFrame("Construção 2022");
 	  janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	  
 	  
@@ -113,13 +113,13 @@ public class ClasseExec extends JDialog {
 		JLabel numMaoObra = new JLabel(df.format(maoObra));
 		JLabel numIss = new JLabel(df.format(issEng));
 		JLabel numVisa = new JLabel(df.format(visa));
-		JLabel numTaxas = new JLabel("43,83");
+		JLabel numTaxas = new JLabel("48,61");
 		JLabel numTotal = new JLabel(df.format(valorTotal));
 		
 		
 	  jPanel.setBackground(Color.white);
 	  jPanel.setLayout(null);
-	  jPanel.setPreferredSize(new Dimension(500,500));
+	  jPanel.setPreferredSize(new Dimension(500,700));
 	  
 	  
 	  jPanel.add(v1);
@@ -178,7 +178,7 @@ public class ClasseExec extends JDialog {
 	  jPanel.add(numTotal);
 	  numTotal.setBounds(200, 400, 200, 50);
 	  
-	  jPanel.add(new JLabel("VALEU")).setBounds(200, 500, 500, 50);
+	  jPanel.add(new JLabel("ENOIS TUBARAO")).setBounds(200, 500, 500, 50);
 	  
 	  janela.pack();
 	  janela.setVisible(true);
